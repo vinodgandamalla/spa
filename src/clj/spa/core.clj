@@ -30,7 +30,7 @@
   (GET "/hello" [] "success fully saved")
   (route/resources "/static")
   (route/not-found "<h1>Page not found</h1>")
-  (GET "/save" [] true)
+  (GET "/save" [] true))
 
 ;; Application  entry point
 
