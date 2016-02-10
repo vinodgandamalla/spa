@@ -61,19 +61,17 @@
       {:handler (fn [res] (swap! state assoc :saved? res))
        :error-handler error-handler}))
 
-(defn done1 []
-  (POST "/send-message"
-      {:params {:message "Hello World"
-                :user    "Bob"}
-       :handler handler
-       :error-handler error-handler}))
+;; (defn done1 []
+;;   (POST "/send-message"
+;;       {:params {:message "Hello World"
+;;                 :user    "Bob"}
+;;        :handler handler
+;;        :error-handler error-handler}))
 
 
-(defn done []
-  (GET "/hello" {:handler handler
-                 :error-handler error-handler}))
-
-
+;; (defn done []
+;;   (GET "/hello" {:handler handler
+;;                  :error-handler error-handler}))
 
 
 (defn home []

@@ -27,10 +27,9 @@
 ;; Routes definition
 (defroutes app
   (GET "/" [] home)
-  (GET "/hello" [] "success fully saved")
+  (GET "/save" [] true)
   (route/resources "/static")
-  (route/not-found "<h1>Page not found</h1>")
-  (GET "/save" [] true))
+  (route/not-found "<h1>Page not found</h1>"))
 
 ;; Application  entry point
 
