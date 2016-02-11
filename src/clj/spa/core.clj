@@ -26,8 +26,8 @@
 
 ;; Routes definition
 (defroutes app
-  (GET "/" [] home)
-  (GET "/save" [] true)
+  (GET "/hello" [] "hello world")
+  (GET "/bye" [] "bye")
   (route/resources "/static")
   (route/not-found "<h1>Page not found</h1>"))
 
